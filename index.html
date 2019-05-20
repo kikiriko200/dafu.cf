@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+  </head>
+  <body>
+    <div id="mobile-menu">
+      <div class="g-nav r">
+        <p class="nav-title col-tb-8 col-sp-8" data-target="./html/top.html">DAFU</p>
+        <div class="menu-btn col-tb-2 col-sp-2">
+          <label class="menu-label" for="p">
+            <span class="menu-label-border"></span>
+            <span class="menu-label-border"></span>
+            <span class="menu-label-border"></span>
+          </label>
+          <input type="checkbox" id="p" class="hide">
+        </div>
+      </div>
+      <div class="side mobile-side hide">
+          <div class="side-inner">
+            <h2 class="side-sub-title">Share</h2>
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+              <a class="a2a_button_twitter"></a>
+              <a class="a2a_button_facebook"></a>
+              <a class="a2a_button_hatena"></a>
+              <a class="a2a_button_email"></a>
+              <a class="a2a_button_copy_link"></a>
+              <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            </div>
+            <script>
+            var a2a_config = a2a_config || {};
+            a2a_config.locale = "ja";
+            </script>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
+            <h2 class="side-sub-title">Index</h2>
+            <ul class="side-list">
+              <li class="side-list-item" data-target="./html/top.html">TOP</li>
+              <li class="side-list-item" data-target="./html/about.html">About me</li>
+              <li class="side-list-item" data-target="./html/works.html">Works</li>
+              <li class="side-list-item" data-target="./html/social.html">Social</li>
+              <li class="side-list-item" data-target="./html/donate.html">Donate</li>
+            </ul>
+          </div>
+          <div class="side-footer">
+            <div class="side-footer-inner">
+              <p>&copy;2017- DAFU</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="r" style="height: 100vh">
+      <div class="side pc-side col-2">
+        <div class="side-inner">
+          <h2 class="side-title" data-target="./html/top.html">DAFU</h2>
+          <h2 class="side-sub-title">Share</h2>
+          <!-- AddToAny BEGIN -->
+          <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_hatena"></a>
+            <a class="a2a_button_email"></a>
+            <a class="a2a_button_copy_link"></a>
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+          </div>
+          <script>
+          var a2a_config = a2a_config || {};
+          a2a_config.locale = "ja";
+          </script>
+          <script async src="https://static.addtoany.com/menu/page.js"></script>
+          <!-- AddToAny END -->
+          <h2 class="side-sub-title">Index</h2>
+          <ul class="side-list">
+            <li class="side-list-item" data-target="./html/top.html">TOP</li>
+            <li class="side-list-item" data-target="./html/about.html">About me</li>
+            <li class="side-list-item" data-target="./html/works.html">Works</li>
+            <li class="side-list-item" data-target="./html/social.html">Social</li>
+            <li class="side-list-item" data-target="./html/donate.html">Donate</li>
+          </ul>
+        </div>
+        <div class="side-footer">
+          <div class="side-footer-inner">
+            <p>&copy;2017- DAFU</p>
+          </div>
+        </div>
+      </div>
+      <div class="main col-8">
+        <div id="mobile-menu" style="display: none;">
+        </div>
+        <div class="main-inner">
+          <iframe id="main-frame" name="main-frame" src="./html/top.html" frameborder="0" style="width: 100%;height: 100%;"></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+      $('.side-list-item,.nav-title,.side-title').on('click',function(){
+        $('#main-frame').attr('src',$(this).data('target'));
+      })
+      var w = $(document).width();
+      if(w <= 1023){
+        var h = $(document).height() + 'px';
+        $('#main-frame').attr('height',h);
+      }
+      $('#p').change(function(){
+        $('.mobile-side').toggle('hide');
+      })
+    </script>
+  </body>
+</html>

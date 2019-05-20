@@ -1,0 +1,25 @@
+.main{
+  background: #fff;
+}
+
+.main-inner{
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+}
+
+.main-title{
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.main-sub-title{
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@include pc{
+  .main-inner{
+    padding: 30px 50px;
+  }
+}

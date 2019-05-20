@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.min.css">
+    <link rel="stylesheet" href="./../css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"></script>
+  </head>
+  <div class="main-inner">
+    <h1 class="main-title">Works</h1>
+    <p>
+      このページでは、私の制作物を紹介しています。
+    </p>
+
+    <div class="section">
+      <h2 class="main-sub-title">My Blog</h2>
+      <p class="works-url">URL:<a href="https://blog.dafu.cf/" target="_new">https://blog.dafu.cf/</a></p>
+      <p class="works-description">
+        私のブログです。<br>
+        テック系記事だけでなく百合(性癖)の記事などいろんなものを書いています。
+      </p>
+      <button class="btn btn-works-detail" data-link="https://blog.dafu.cf/">ブログを読む</button>
+    </div>
+
+    <div class="section">
+      <h2 class="main-sub-title">
+        8-Grid
+        <a style="margin-left:20px;font-size:30px" href="https://github.com/kikiriko200/8-Grid" target="_new">
+          <i class="fab fa-github"></i>
+        </a>
+      </h2>
+      <p class="works-url">URL:<a href="https://dafu.cf/8-Grid/" target="_new">https://dafu.cf/8-Grid/</a></p>
+      <p class="works-description">
+        カラムを普通の12個から8個にして軽量化したCSSです。
+      </p>
+      <button class="btn btn-works-detail" data-link="https://dafu.cf/8-Grid/">もっと見る</button>
+    </div>
+
+    <div class="section">
+      <h2 class="main-sub-title">あ.ml</h2>
+      <p class="works-url">URL:<a href="https://xn--l8j.ml/" target="_new">https://あ.ml/</a></p>
+      <p class="works-description">
+        長―――――――――――――――――――――いURLを短くするためのツールです。<br>
+        日本語の1文字URLになっているので、とても短くできます。
+      </p>
+      <button class="btn btn-works-detail" data-link="https://xn--l8j.ml/">あ.ml</button>
+    </div>
+
+    <div class="section">
+      <h2 class="main-sub-title">
+        DAFU's Tools
+        <a style="margin-left:20px;font-size:30px" href="https://github.com/kikiriko200/tools/" target="_new">
+          <i class="fab fa-github"></i>
+        </a>
+      </h2>
+      <p class="works-url">URL:<a href="https://dafu.cf/tools/" target="_new">https://dafu.cf/tools/</a></p>
+      <p class="works-description">
+        メモ帳や文字数チェッカーなど様々なツールを公開しています。
+      </p>
+      <button class="btn btn-works-detail" data-link="https://dafu.cf/tools/">もっと見る</button>
+    </div>
+
+    <div class="section">
+      <h2 class="main-sub-title">
+        Nemlog-UF
+        <a style="margin-left:20px;font-size:30px" href="https://github.com/kikiriko200/Nemlog-UF" target="_new">
+          <i class="fab fa-github"></i>
+        </a>
+      </h2>
+      <p class="works-url">URL:<a href="https://nemlog.nem.social/blog/19268" target="_new">https://nemlog.nem.social/blog/19268</a></p>
+      <p class="works-description">
+        Nemlogに目次や画像投稿機能など様々な機能を追加するChrome拡張です。<br>
+      </p>
+      <button class="btn btn-works-detail" data-link="https://nemlog.nem.social/blog/19268/">もっと見る</button>
+    </div>
+
+  </div>
+  <script src="../js/jquery.min.js"></script>
+  <script>
+    $('.btn-works-detail,.link-social').click(function(){
+      var link = $(this).data('link');
+      console.log(link)
+      window.open(link, '_new');
+    })
+  </script>

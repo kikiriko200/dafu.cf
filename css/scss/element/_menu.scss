@@ -1,0 +1,39 @@
+.g-nav{
+  line-height: 40px;
+  padding: 10px 20px;
+  .nav-title{
+    font-size: 22px;
+  }
+  .menu-btn{
+    padding: 10px;
+    .menu-label{
+      display: block;
+      height: 100%;
+      text-align: -webkit-right;
+      font-size: 22px;
+      .menu-label-border{
+        display: block;
+        margin: 8.5px;
+        height: 1px;
+        width: 60%;
+        max-width: 30px;
+        box-shadow: rgb(0, 0, 0) 0px 1px 0px 0px;
+      }
+    }
+  }
+}
+@include pc{
+  #mobile-menu{
+    display: none;
+  }
+}
+@include tb{
+  #mobile-menu{
+    display: block;
+  }
+}
+@include sp{
+  #mobile-menu{
+    display: block;
+  }
+}

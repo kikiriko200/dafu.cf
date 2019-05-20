@@ -1,0 +1,30 @@
+.section{
+  width: 100%;
+  padding: 20px 10px;
+  background: $white;
+  text-align: left;
+  &:nth-child(2n){
+    background:$light-gray;
+  }
+  .inner{
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+}
+
+.btn{
+  background: inherit;
+  padding: 10px 20px;
+  border: 2px solid;
+  &:hover{
+    background: #333;
+    color: #fff;
+    transition: .3s;
+    &::after{
+      content: ">>";
+      color: #fff;
+      margin-left: 15px;
+      transition: .5s;
+    }
+  }
+}
