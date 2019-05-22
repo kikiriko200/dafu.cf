@@ -8,6 +8,27 @@
   <p>
     このサイトは、DAFUのポートフォリオです。<br>
     Windows10の設定画面を意識して作りました。<br>
-    サイドバーから各ページへ偏移できます。
+    サイドバーから各ページへ遷移できます。
   </p>
+  <h2 class="main-sub-title">ページ一覧</h2>
+  <p>押すとそのページへジャンプするよ</p>
+  <ul>
+    <li class="top-list-item" data-target="./top.html">TOP</li>
+    <li class="top-list-item" data-target="./about.html">About me</li>
+    <li class="top-list-item" data-target="./works.html">Works</li>
+    <li class="top-list-item" data-target="./social.html">Social</li>
+    <li class="top-list-item" data-target="./donate.html">Donate</li>
+  </ul>
 </div>
+<style>
+  .top-list-item:hover{
+    color: #ff6348;
+    transition: .15s;
+  }
+</style>
+<script src="../js/jquery.min.js"></script>
+<script>
+  $('.top-list-item').click(function(){
+    location.href = $(this).data('target');
+  })
+</script>
