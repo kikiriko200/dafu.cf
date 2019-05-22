@@ -72,27 +72,6 @@ h4,h5,h6{
   display: none;
 }
 
-// Header
-.header{
-  width: 100%;
-  background: $white;
-  .inner{
-    margin: 0 auto;
-    width: 80%;
-  }
-}
-
-// Footer
-.footer{
-  width: 100%;
-  background: $semi-white;
-  .inner{
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-  }
-}
-
 @import './grid';
 @import './section';
 @import './table';
