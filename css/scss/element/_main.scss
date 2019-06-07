@@ -4,8 +4,11 @@
 
 .main-inner{
   margin: 0 auto;
-  padding: 20px;
   height: 100%;
+}
+
+.frame-main-inner{
+  padding: 20px;
 }
 
 .main-title{
@@ -16,6 +19,10 @@
 .main-sub-title{
   font-size: 24px;
   font-weight: 300;
+}
+
+.top-list-item{
+  list-style-position: inside;
 }
 
 @include pc{
