@@ -314,7 +314,7 @@ thead th {
 
 .top-list-item {
   list-style-position: inside;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 1024px) {
