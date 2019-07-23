@@ -16,6 +16,7 @@
   background: inherit;
   padding: 10px 20px;
   border: 2px solid;
+  transition: .3s;
   &:hover{
     background: $dark;
     color: $white;
