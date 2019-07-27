@@ -324,6 +324,13 @@ thead th {
           user-select: none;
 }
 
+.top-list-item:hover {
+  color: #ff6348;
+  -webkit-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+}
+
 @media screen and (min-width: 1024px) {
   .main-inner {
     padding: 30px 50px;
